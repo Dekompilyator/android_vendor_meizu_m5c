@@ -1,0 +1,1 @@
+# Vendor tree of Meizu M5c for building LineageOS 14.1 and Android Nougat 7.1.1 AOSP ROMs
