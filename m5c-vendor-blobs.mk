@@ -46,6 +46,38 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/etc/mddb/BPMdMetaDatabase_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n:system/etc/mddb/BPMdMetaDatabase_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n \
     vendor/meizu/m5c/proprietary/etc/mddb/mdm_layout_desc_1_lwg_n.dat:system/etc/mddb/mdm_layout_desc_1_lwg_n.dat \
     vendor/meizu/m5c/proprietary/etc/mddb/DbgInfo_LR9.W1444.MD.LWTG.MP_HQ6737M_65_1MZ_M0_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_2017_11_02_17_46_1_lwg_n:system/etc/mddb/DbgInfo_LR9.W1444.MD.LWTG.MP_HQ6737M_65_1MZ_M0_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_2017_11_02_17_46_1_lwg_n \
+    vendor/meizu/m5c/proprietary/lib/mtk-rilmd2.so:system/lib/mtk-rilmd2.so \
+    vendor/meizu/m5c/proprietary/lib64/mtk-rilmd2.so:system/lib64/mtk-rilmd2.so \
+    vendor/meizu/m5c/proprietary/lib/librilmtkmd2.so:system/lib/librilmtkmd2.so \
+    vendor/meizu/m5c/proprietary/lib64/librilmtkmd2.so:system/lib64/librilmtkmd2.so \
+    vendor/meizu/m5c/proprietary/lib/librilutils.so:system/lib/librilutils.so \
+    vendor/meizu/m5c/proprietary/lib64/librilutils.so:system/lib64/librilutils.so \
+    vendor/meizu/m5c/proprietary/lib/libmal.so:system/lib/libmal.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal.so:system/lib64/libmal.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_datamngr.so:system/lib/libmal_datamngr.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_datamngr.so:system/lib64/libmal_datamngr.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_epdga.so:system/lib/libmal_epdga.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_epdga.so:system/lib64/libmal_epdga.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_imsmngr.so:system/lib/libmal_imsmngr.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_imsmngr.so:system/lib64/libmal_imsmngr.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_mdmngr.so:system/lib/libmal_mdmngr.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_mdmngr.so:system/lib64/libmal_mdmngr.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_nwmngr.so:system/lib/libmal_nwmngr.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_nwmngr.so:system/lib64/libmal_nwmngr.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_rds.so:system/lib/libmal_rds.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_rds.so:system/lib64/libmal_rds.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_rilproxy.so:system/lib/libmal_rilproxy.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_rilproxy.so:system/lib64/libmal_rilproxy.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_simmngr.so:system/lib/libmal_simmngr.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_simmngr.so:system/lib64/libmal_simmngr.so \
+    vendor/meizu/m5c/proprietary/lib/libmatv_cust.so:system/lib/libmatv_cust.so \
+    vendor/meizu/m5c/proprietary/lib64/libmatv_cust.so:system/lib64/libmatv_cust.so \
+    vendor/meizu/m5c/proprietary/lib/libccci_util.so:system/lib/libccci_util.so \
+    vendor/meizu/m5c/proprietary/lib64/libccci_util.so:system/lib64/libccci_util.so \
+    vendor/meizu/m5c/proprietary/lib/volte_imsm.so:system/lib/volte_imsm.so \
+    vendor/meizu/m5c/proprietary/lib64/volte_imsm.so:system/lib64/volte_imsm.so \
+    vendor/meizu/m5c/proprietary/etc/firmware/em_filter_1_lwg_n.bin:system/etc/firmware/em_filter_1_lwg_n.bin \
+    vendor/meizu/m5c/proprietary/etc/firmware/gt9xx_fw.bin:system/etc/firmware/gt9xx_fw.bin \
     vendor/meizu/m5c/proprietary/bin/akmd09911:system/bin/akmd09911 \
     vendor/meizu/m5c/proprietary/bin/akmd8963:system/bin/akmd8963 \
     vendor/meizu/m5c/proprietary/bin/akmd8975:system/bin/akmd8975 \
@@ -505,7 +537,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
     vendor/meizu/m5c/proprietary/lib64/hw/vibrator.default.so:system/lib64/hw/vibrator.default.so \
     vendor/meizu/m5c/proprietary/etc/perfservscntbl.txt:system/etc/perfservscntbl.txt \
-    vendor/meizu/m5c/proprietary/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
     vendor/meizu/m5c/proprietary/etc/trustzone.bin:system/etc/trustzone.bin \
     vendor/meizu/m5c/proprietary/etc/firmware/ROMv2_lm_patch_1_0_hdr.bin:system/etc/firmware/ROMv2_lm_patch_1_0_hdr.bin \
     vendor/meizu/m5c/proprietary/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin:system/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin \
