@@ -84,9 +84,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/bin/s62xd:system/bin/s62xd \
     vendor/meizu/m5c/proprietary/lib/hw/sensors.mt6737m.so:system/lib/hw/sensors.mt6737m.so \
     vendor/meizu/m5c/proprietary/lib64/hw/sensors.mt6737m.so:system/lib64/hw/sensors.mt6737m.so \
-    vendor/meizu/m5c/proprietary/bin/mtk_agpsd:system/bin/mtk_agpsd \
-    vendor/meizu/m5c/proprietary/bin/slpd:system/bin/slpd \
-    vendor/meizu/m5c/proprietary/bin/wifi2agps:system/bin/wifi2agps \
     vendor/meizu/m5c/proprietary/lib/libmtklimiter.so:system/lib/libmtklimiter.so \
     vendor/meizu/m5c/proprietary/lib64/libmtklimiter.so:system/lib64/libmtklimiter.so \
     vendor/meizu/m5c/proprietary/etc/.tp/.ht120.mtc:system/etc/.tp/.ht120.mtc \
@@ -116,8 +113,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib64/libgas.so:system/lib64/libgas.so \
     vendor/meizu/m5c/proprietary/lib/libged.so:system/lib/libged.so \
     vendor/meizu/m5c/proprietary/lib64/libged.so:system/lib64/libged.so \
-    vendor/meizu/m5c/proprietary/lib/libgralloc_extra.so:system/lib/libgralloc_extra.so \
-    vendor/meizu/m5c/proprietary/lib64/libgralloc_extra.so:system/lib64/libgralloc_extra.so \
     vendor/meizu/m5c/proprietary/lib/libgpu_aux.so:system/lib/libgpu_aux.so \
     vendor/meizu/m5c/proprietary/lib64/libgpu_aux.so:system/lib64/libgpu_aux.so \
     vendor/meizu/m5c/proprietary/lib64/libpq_cust.so:system/lib64/libpq_cust.so \
