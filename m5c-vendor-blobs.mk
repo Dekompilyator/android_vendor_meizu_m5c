@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/bin/ccci_mdinit:system/bin/ccci_mdinit \
     vendor/meizu/m5c/proprietary/bin/gsm0710muxd:system/bin/gsm0710muxd \
     vendor/meizu/m5c/proprietary/bin/mtkrild:system/bin/mtkrild \
+    vendor/meizu/m5c/proprietary/bin/mtkrildmd2:system/bin/mtkrildmd2 \
     vendor/meizu/m5c/proprietary/bin/muxreport:system/bin/muxreport \
     vendor/meizu/m5c/proprietary/bin/netdiag:system/bin/netdiag \
     vendor/meizu/m5c/proprietary/bin/terservice:system/bin/terservice \
@@ -35,41 +36,43 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib64/libterservice.so:system/lib64/libterservice.so \
     vendor/meizu/m5c/proprietary/lib/mtk-ril.so:system/lib/mtk-ril.so \
     vendor/meizu/m5c/proprietary/lib64/mtk-ril.so:system/lib64/mtk-ril.so \
-    vendor/meizu/m5c/proprietary/etc/firmware/catcher_filter_1_lwg_n.bin:system/etc/firmware/catcher_filter_1_lwg_n.bin \
-    vendor/meizu/m5c/proprietary/etc/firmware/dsp_1_lwg_n.bin:system/etc/firmware/dsp_1_lwg_n.bin \
-    vendor/meizu/m5c/proprietary/etc/firmware/modem_1_lwg_n.img:system/etc/firmware/modem_1_lwg_n.img \
-    vendor/meizu/m5c/proprietary/etc/mddb/BPLGUInfoCustomAppSrcP_MT6735_S00_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n:system/etc/mddb/BPLGUInfoCustomAppSrcP_MT6735_S00_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n \
-    vendor/meizu/m5c/proprietary/etc/mddb/BPMdMetaDatabase_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n:system/etc/mddb/BPMdMetaDatabase_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n \
-    vendor/meizu/m5c/proprietary/etc/mddb/mdm_layout_desc_1_lwg_n.dat:system/etc/mddb/mdm_layout_desc_1_lwg_n.dat \
-    vendor/meizu/m5c/proprietary/etc/mddb/DbgInfo_LR9.W1444.MD.LWTG.MP_HQ6737M_65_1MZ_M0_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_2017_11_02_17_46_1_lwg_n:system/etc/mddb/DbgInfo_LR9.W1444.MD.LWTG.MP_HQ6737M_65_1MZ_M0_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_2017_11_02_17_46_1_lwg_n \
     vendor/meizu/m5c/proprietary/lib/mtk-rilmd2.so:system/lib/mtk-rilmd2.so \
     vendor/meizu/m5c/proprietary/lib64/mtk-rilmd2.so:system/lib64/mtk-rilmd2.so \
-    vendor/meizu/m5c/proprietary/lib/librilmtkmd2.so:system/lib/librilmtkmd2.so \
-    vendor/meizu/m5c/proprietary/lib64/librilmtkmd2.so:system/lib64/librilmtkmd2.so \
-    vendor/meizu/m5c/proprietary/lib/libmal.so:system/lib/libmal.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal.so:system/lib64/libmal.so \
-    vendor/meizu/m5c/proprietary/lib/libmal_datamngr.so:system/lib/libmal_datamngr.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal_datamngr.so:system/lib64/libmal_datamngr.so \
-    vendor/meizu/m5c/proprietary/lib/libmal_epdga.so:system/lib/libmal_epdga.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal_epdga.so:system/lib64/libmal_epdga.so \
-    vendor/meizu/m5c/proprietary/lib/libmal_imsmngr.so:system/lib/libmal_imsmngr.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal_imsmngr.so:system/lib64/libmal_imsmngr.so \
-    vendor/meizu/m5c/proprietary/lib/libmal_mdmngr.so:system/lib/libmal_mdmngr.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal_mdmngr.so:system/lib64/libmal_mdmngr.so \
-    vendor/meizu/m5c/proprietary/lib/libmal_nwmngr.so:system/lib/libmal_nwmngr.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal_nwmngr.so:system/lib64/libmal_nwmngr.so \
-    vendor/meizu/m5c/proprietary/lib/libmal_rds.so:system/lib/libmal_rds.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal_rds.so:system/lib64/libmal_rds.so \
     vendor/meizu/m5c/proprietary/lib/libmal_rilproxy.so:system/lib/libmal_rilproxy.so \
     vendor/meizu/m5c/proprietary/lib64/libmal_rilproxy.so:system/lib64/libmal_rilproxy.so \
-    vendor/meizu/m5c/proprietary/lib/libmal_simmngr.so:system/lib/libmal_simmngr.so \
-    vendor/meizu/m5c/proprietary/lib64/libmal_simmngr.so:system/lib64/libmal_simmngr.so \
-    vendor/meizu/m5c/proprietary/lib/libmatv_cust.so:system/lib/libmatv_cust.so \
-    vendor/meizu/m5c/proprietary/lib64/libmatv_cust.so:system/lib64/libmatv_cust.so \
+    vendor/meizu/m5c/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/meizu/m5c/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
+    vendor/meizu/m5c/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/meizu/m5c/proprietary/lib64/libril.so:system/lib64/libril.so \
+    vendor/meizu/m5c/proprietary/lib/librilmtk.so:system/lib/librilmtk.so \
+    vendor/meizu/m5c/proprietary/lib64/librilmtk.so:system/lib64/librilmtk.so \
+    vendor/meizu/m5c/proprietary/lib/librilmtkmd2.so:system/lib/librilmtkmd2.so \
+    vendor/meizu/m5c/proprietary/lib64/librilmtkmd2.so:system/lib64/librilmtkmd2.so \
+    vendor/meizu/m5c/proprietary/lib/librilutils.so:system/lib/librilutils.so \
+    vendor/meizu/m5c/proprietary/lib64/librilutils.so:system/lib64/librilutils.so \
     vendor/meizu/m5c/proprietary/lib/volte_imsm.so:system/lib/volte_imsm.so \
     vendor/meizu/m5c/proprietary/lib64/volte_imsm.so:system/lib64/volte_imsm.so \
+    vendor/meizu/m5c/proprietary/lib/libimsma_rtp.so:system/lib/libimsma_rtp.so \
+    vendor/meizu/m5c/proprietary/lib64/libimsma_rtp.so:system/lib64/libimsma_rtp.so \
+    vendor/meizu/m5c/proprietary/lib/libimsma_socketwrapper.so:system/lib/libimsma_socketwrapper.so \
+    vendor/meizu/m5c/proprietary/lib64/libimsma_socketwrapper.so:system/lib64/libimsma_socketwrapper.so \
+    vendor/meizu/m5c/proprietary/lib/libimsma.so:system/lib/libimsma.so \
+    vendor/meizu/m5c/proprietary/lib64/libimsma.so:system/lib64/libimsma.so \
+    vendor/meizu/m5c/proprietary/lib/libmal_imsmngr.so:system/lib/libmal_imsmngr.so \
+    vendor/meizu/m5c/proprietary/lib64/libmal_imsmngr.so:system/lib64/libmal_imsmngr.so \
+    vendor/meizu/m5c/proprietary/etc/virtual-spn-conf-by-efgid1.xml:system/etc/virtual-spn-conf-by-efgid1.xml \
+    vendor/meizu/m5c/proprietary/etc/virtual-spn-conf-by-efpnn.xml:system/etc/virtual-spn-conf-by-efpnn.xml \
+    vendor/meizu/m5c/proprietary/etc/virtual-spn-conf-by-efspn.xml:system/etc/virtual-spn-conf-by-efspn.xml \
+    vendor/meizu/m5c/proprietary/etc/virtual-spn-conf-by-imsi.xml:system/etc/virtual-spn-conf-by-imsi.xml \
+    vendor/meizu/m5c/proprietary/etc/mddb/BPLGUInfoCustomAppSrcP_MT6735_S00_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n:system/etc/mddb/BPLGUInfoCustomAppSrcP_MT6735_S00_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n \
+    vendor/meizu/m5c/proprietary/etc/mddb/BPMdMetaDatabase_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n:system/etc/mddb/BPMdMetaDatabase_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_1_lwg_n \
+    vendor/meizu/m5c/proprietary/etc/mddb/DbgInfo_LR9.W1444.MD.LWTG.MP_HQ6737M_65_1MZ_M0_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_2017_11_02_17_46_1_lwg_n:system/etc/mddb/DbgInfo_LR9.W1444.MD.LWTG.MP_HQ6737M_65_1MZ_M0_MOLY_LR9_W1444_MD_LWTG_MP_V106_P5_2017_11_02_17_46_1_lwg_n \
+    vendor/meizu/m5c/proprietary/etc/mddb/mdm_layout_desc_1_lwg_n.dat:system/etc/mddb/mdm_layout_desc_1_lwg_n.dat \
+    vendor/meizu/m5c/proprietary/etc/firmware/catcher_filter_1_lwg_n.bin:system/etc/firmware/catcher_filter_1_lwg_n.bin \
+    vendor/meizu/m5c/proprietary/etc/firmware/dsp_1_lwg_n.bin:system/etc/firmware/dsp_1_lwg_n.bin \
     vendor/meizu/m5c/proprietary/etc/firmware/em_filter_1_lwg_n.bin:system/etc/firmware/em_filter_1_lwg_n.bin \
-    vendor/meizu/m5c/proprietary/etc/firmware/gt9xx_fw.bin:system/etc/firmware/gt9xx_fw.bin \
+    vendor/meizu/m5c/proprietary/etc/firmware/modem_1_lwg_n.img:system/etc/firmware/modem_1_lwg_n.img \
+    vendor/meizu/m5c/proprietary/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk \
     vendor/meizu/m5c/proprietary/bin/akmd09911:system/bin/akmd09911 \
     vendor/meizu/m5c/proprietary/bin/akmd8963:system/bin/akmd8963 \
     vendor/meizu/m5c/proprietary/bin/akmd8975:system/bin/akmd8975 \
@@ -82,52 +85,34 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/bin/orientationd:system/bin/orientationd \
     vendor/meizu/m5c/proprietary/bin/qmcX983d:system/bin/qmcX983d \
     vendor/meizu/m5c/proprietary/bin/s62xd:system/bin/s62xd \
-    vendor/meizu/m5c/proprietary/lib/libmtklimiter.so:system/lib/libmtklimiter.so \
-    vendor/meizu/m5c/proprietary/lib64/libmtklimiter.so:system/lib64/libmtklimiter.so \
+    vendor/meizu/m5c/proprietary/app/MTKThermalManager/MTKThermalManager.apk:system/app/MTKThermalManager/MTKThermalManager.apk \
+    vendor/meizu/m5c/proprietary/bin/thermal:system/bin/thermal \
+    vendor/meizu/m5c/proprietary/bin/thermald:system/bin/thermald \
     vendor/meizu/m5c/proprietary/etc/.tp/.ht120.mtc:system/etc/.tp/.ht120.mtc \
     vendor/meizu/m5c/proprietary/etc/.tp/thermal.conf:system/etc/.tp/thermal.conf \
     vendor/meizu/m5c/proprietary/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf \
     vendor/meizu/m5c/proprietary/lib/libperfservice.so:system/lib/libperfservice.so \
     vendor/meizu/m5c/proprietary/lib64/libperfservice.so:system/lib64/libperfservice.so \
+    vendor/meizu/m5c/proprietary/lib/libmtklimiter.so:system/lib/libmtklimiter.so \
+    vendor/meizu/m5c/proprietary/lib64/libmtklimiter.so:system/lib64/libmtklimiter.so \
     vendor/meizu/m5c/proprietary/bin/nvram_daemon:system/bin/nvram_daemon \
-    vendor/meizu/m5c/proprietary/lib/libcfgdevparam.so:system/lib/libcfgdevparam.so \
-    vendor/meizu/m5c/proprietary/lib64/libcfgdevparam.so:system/lib64/libcfgdevparam.so \
     vendor/meizu/m5c/proprietary/lib/libcustom_nvram.so:system/lib/libcustom_nvram.so \
     vendor/meizu/m5c/proprietary/lib64/libcustom_nvram.so:system/lib64/libcustom_nvram.so \
     vendor/meizu/m5c/proprietary/lib/libcustom_prop.so:system/lib/libcustom_prop.so \
     vendor/meizu/m5c/proprietary/lib64/libcustom_prop.so:system/lib64/libcustom_prop.so \
-    vendor/meizu/m5c/proprietary/lib/libnvram.so:system/lib/libnvram.so \
-    vendor/meizu/m5c/proprietary/lib64/libnvram.so:system/lib64/libnvram.so \
+    vendor/meizu/m5c/proprietary/lib/libnvramagentclient.so:system/lib/libnvramagentclient.so \
+    vendor/meizu/m5c/proprietary/lib64/libnvramagentclient.so:system/lib64/libnvramagentclient.so \
     vendor/meizu/m5c/proprietary/lib/libnvram_daemon_callback.so:system/lib/libnvram_daemon_callback.so \
     vendor/meizu/m5c/proprietary/lib64/libnvram_daemon_callback.so:system/lib64/libnvram_daemon_callback.so \
     vendor/meizu/m5c/proprietary/lib/libnvram_platform.so:system/lib/libnvram_platform.so \
     vendor/meizu/m5c/proprietary/lib64/libnvram_platform.so:system/lib64/libnvram_platform.so \
     vendor/meizu/m5c/proprietary/lib/libnvram_sec.so:system/lib/libnvram_sec.so \
     vendor/meizu/m5c/proprietary/lib64/libnvram_sec.so:system/lib64/libnvram_sec.so \
-    vendor/meizu/m5c/proprietary/lib/libnvramagentclient.so:system/lib/libnvramagentclient.so \
-    vendor/meizu/m5c/proprietary/lib64/libnvramagentclient.so:system/lib64/libnvramagentclient.so \
-    vendor/meizu/m5c/proprietary/lib/libarcsoft_makeup.so:system/lib/libarcsoft_makeup.so \
-    vendor/meizu/m5c/proprietary/lib64/libarcsoft_makeup.so:system/lib64/libarcsoft_makeup.so \
-    vendor/meizu/m5c/proprietary/lib/libdlna_jni.so:system/lib/libdlna_jni.so \
-    vendor/meizu/m5c/proprietary/lib64/libdlna_jni.so:system/lib64/libdlna_jni.so \
-    vendor/meizu/m5c/proprietary/lib/libDominantColors.so:system/lib/libDominantColors.so \
-    vendor/meizu/m5c/proprietary/lib64/libDominantColors.so:system/lib64/libDominantColors.so \
-    vendor/meizu/m5c/proprietary/lib/libexif_gallery.so:system/lib/libexif_gallery.so \
-    vendor/meizu/m5c/proprietary/lib64/libexif_gallery.so:system/lib64/libexif_gallery.so \
-    vendor/meizu/m5c/proprietary/lib/libjni_gauss_blur.so:system/lib/libjni_gauss_blur.so \
-    vendor/meizu/m5c/proprietary/lib/libjni_systemui.so:system/lib/libjni_systemui.so \
-    vendor/meizu/m5c/proprietary/lib64/libjni_systemui.so:system/lib64/libjni_systemui.so \
-    vendor/meizu/m5c/proprietary/lib/libjni_systemuitools.so:system/lib/libjni_systemuitools.so \
-    vendor/meizu/m5c/proprietary/lib64/libjni_systemuitools.so:system/lib64/libjni_systemuitools.so \
-    vendor/meizu/m5c/proprietary/lib/libmakeup_style.so:system/lib/libmakeup_style.so \
-    vendor/meizu/m5c/proprietary/lib64/libmakeup_style.so:system/lib64/libmakeup_style.so \
-    vendor/meizu/m5c/proprietary/lib/libnative_blur.so:system/lib/libnative_blur.so \
-    vendor/meizu/m5c/proprietary/lib64/libnative_blur.so:system/lib64/libnative_blur.so \
-    vendor/meizu/m5c/proprietary/lib/libnativecheck-jni.so:system/lib/libnativecheck-jni.so \
-    vendor/meizu/m5c/proprietary/lib64/libnativecheck-jni.so:system/lib64/libnativecheck-jni.so \
-    vendor/meizu/m5c/proprietary/lib/libnative_glrenderer.so:system/lib/libnative_glrenderer.so \
-    vendor/meizu/m5c/proprietary/lib64/libnative_glrenderer.so:system/lib64/libnative_glrenderer.so \
+    vendor/meizu/m5c/proprietary/lib/libnvram.so:system/lib/libnvram.so \
+    vendor/meizu/m5c/proprietary/lib64/libnvram.so:system/lib64/libnvram.so \
+    vendor/meizu/m5c/proprietary/etc/firmware/gt9xx_fw.bin:system/etc/firmware/gt9xx_fw.bin \
     vendor/meizu/m5c/proprietary/bin/pq:system/bin/pq \
+    vendor/meizu/m5c/proprietary/bin/guiext-server:system/bin/guiext-server \
     vendor/meizu/m5c/proprietary/lib/libblisrc32.so:system/lib/libblisrc32.so \
     vendor/meizu/m5c/proprietary/lib64/libblisrc32.so:system/lib64/libblisrc32.so \
     vendor/meizu/m5c/proprietary/lib/libblisrc.so:system/lib/libblisrc.so \
@@ -143,8 +128,14 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib64/libpq_cust.so:system/lib64/libpq_cust.so \
     vendor/meizu/m5c/proprietary/lib/libpq_prot.so:system/lib/libpq_prot.so \
     vendor/meizu/m5c/proprietary/lib64/libpq_prot.so:system/lib64/libpq_prot.so \
-    vendor/meizu/m5c/proprietary/lib/libgralloc_extra.so:system/lib/libgralloc_extra.so \
-    vendor/meizu/m5c/proprietary/lib64/libgralloc_extra.so:system/lib64/libgralloc_extra.so \
+    vendor/meizu/m5c/proprietary/lib/libMiraVision_jni.so:system/lib/libMiraVision_jni.so \
+    vendor/meizu/m5c/proprietary/lib64/libMiraVision_jni.so:system/lib64/libMiraVision_jni.so \
+    vendor/meizu/m5c/proprietary/lib/libPQDCjni.so:system/lib/libPQDCjni.so \
+    vendor/meizu/m5c/proprietary/lib64/libPQDCjni.so:system/lib64/libPQDCjni.so \
+    vendor/meizu/m5c/proprietary/lib/libPQjni.so:system/lib/libPQjni.so \
+    vendor/meizu/m5c/proprietary/lib64/libPQjni.so:system/lib64/libPQjni.so \
+    vendor/meizu/m5c/proprietary/lib/libaal_cust.so:system/lib/libaal_cust.so \
+    vendor/meizu/m5c/proprietary/lib64/libaal_cust.so:system/lib64/libaal_cust.so \
     vendor/meizu/m5c/proprietary/lib/libpqservice.so:system/lib/libpqservice.so \
     vendor/meizu/m5c/proprietary/lib64/libpqservice.so:system/lib64/libpqservice.so \
     vendor/meizu/m5c/proprietary/lib/hw/gralloc.mt6737m.so:system/lib/hw/gralloc.mt6737m.so \
@@ -153,6 +144,9 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib64/hw/hwcomposer.mt6737m.so:system/lib64/hw/hwcomposer.mt6737m.so \
     vendor/meizu/m5c/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
     vendor/meizu/m5c/proprietary/lib64/egl/libGLES_mali.so:system/lib64/egl/libGLES_mali.so \
+    vendor/meizu/m5c/proprietary/lib/libRSDriver_mtk.so:system/lib/libRSDriver_mtk.so \
+    vendor/meizu/m5c/proprietary/lib64/libRSDriver_mtk.so:system/lib64/libRSDriver_mtk.so \
+    vendor/meizu/m5c/proprietary/bin/slpd:system/bin/slpd \
     vendor/meizu/m5c/proprietary/etc/firmware/ROMv2_lm_patch_1_0_hdr.bin:system/etc/firmware/ROMv2_lm_patch_1_0_hdr.bin \
     vendor/meizu/m5c/proprietary/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin:system/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin \
     vendor/meizu/m5c/proprietary/etc/firmware/WIFI_RAM_CODE_6735:system/etc/firmware/WIFI_RAM_CODE_6735 \
@@ -168,6 +162,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/etc/firmware/mt6627/mt6627_fm_v5_coeff.bin:system/etc/firmware/mt6627/mt6627_fm_v5_coeff.bin \
     vendor/meizu/m5c/proprietary/etc/firmware/mt6627/mt6627_fm_v5_patch.bin:system/etc/firmware/mt6627/mt6627_fm_v5_patch.bin \
     vendor/meizu/m5c/proprietary/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg \
+    vendor/meizu/m5c/proprietary/app/LocationEM2/LocationEM2.apk:system/app/LocationEM2/LocationEM2.apk \
     vendor/meizu/m5c/proprietary/lib/lib3a.so:system/lib/lib3a.so \
     vendor/meizu/m5c/proprietary/lib64/lib3a.so:system/lib64/lib3a.so \
     vendor/meizu/m5c/proprietary/lib/libcam1_utils.so:system/lib/libcam1_utils.so \
@@ -295,14 +290,18 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib64/libJpgDecPipe.so:system/lib64/libJpgDecPipe.so \
     vendor/meizu/m5c/proprietary/lib/libavformat.so:system/lib/libavformat.so \
     vendor/meizu/m5c/proprietary/lib64/libavformat.so:system/lib64/libavformat.so \
-    vendor/meizu/m5c/proprietary/lib/libexif_gallery.so:system/lib/libexif_gallery.so \
-    vendor/meizu/m5c/proprietary/lib64/libexif_gallery.so:system/lib64/libexif_gallery.so \
     vendor/meizu/m5c/proprietary/lib/libjhead.so:system/lib/libjhead.so \
     vendor/meizu/m5c/proprietary/lib64/libjhead.so:system/lib64/libjhead.so \
     vendor/meizu/m5c/proprietary/lib/libdrmmtkutil.so:system/lib/libdrmmtkutil.so \
     vendor/meizu/m5c/proprietary/lib64/libdrmmtkutil.so:system/lib64/libdrmmtkutil.so \
     vendor/meizu/m5c/proprietary/lib/liba3m.so:system/lib/liba3m.so \
     vendor/meizu/m5c/proprietary/lib64/liba3m.so:system/lib64/liba3m.so \
+    vendor/meizu/m5c/proprietary/lib/libimage_codec.so:system/lib/libimage_codec.so \
+    vendor/meizu/m5c/proprietary/lib64/libimage_codec.so:system/lib64/libimage_codec.so \
+    vendor/meizu/m5c/proprietary/lib/libimage_dehazing.so:system/lib/libimage_dehazing.so \
+    vendor/meizu/m5c/proprietary/lib64/libimage_dehazing.so:system/lib64/libimage_dehazing.so \
+    vendor/meizu/m5c/proprietary/lib/libimageproc.so:system/lib/libimageproc.so \
+    vendor/meizu/m5c/proprietary/lib64/libimageproc.so:system/lib64/libimageproc.so \
     vendor/meizu/m5c/proprietary/lib/libaudiocompensationfilter.so:system/lib/libaudiocompensationfilter.so \
     vendor/meizu/m5c/proprietary/lib64/libaudiocompensationfilter.so:system/lib64/libaudiocompensationfilter.so \
     vendor/meizu/m5c/proprietary/lib/libaudiocomponentengine.so:system/lib/libaudiocomponentengine.so \
@@ -345,19 +344,20 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib/libvcodec_utility.so:system/lib/libvcodec_utility.so \
     vendor/meizu/m5c/proprietary/lib64/libvcodec_utility.so:system/lib64/libvcodec_utility.so \
     vendor/meizu/m5c/proprietary/lib/libvp8dec_sa.ca7.so:system/lib/libvp8dec_sa.ca7.so \
+    vendor/meizu/m5c/proprietary/lib/libvp8enc_sa.ca7.so:system/lib/libvp8enc_sa.ca7.so \
     vendor/meizu/m5c/proprietary/lib/libvp9dec_sa.ca7.so:system/lib/libvp9dec_sa.ca7.so \
     vendor/meizu/m5c/proprietary/lib/hw/audio.primary.mt6737m.so:system/lib/hw/audio.primary.mt6737m.so \
     vendor/meizu/m5c/proprietary/lib64/hw/audio.primary.mt6737m.so:system/lib64/hw/audio.primary.mt6737m.so \
     vendor/meizu/m5c/proprietary/lib/libaudiodcrflt.so:system/lib/libaudiodcrflt.so \
     vendor/meizu/m5c/proprietary/lib64/libaudiodcrflt.so:system/lib64/libaudiodcrflt.so \
     vendor/meizu/m5c/proprietary/lib/libaudiomtkdcremoval.so:system/lib/libaudiomtkdcremoval.so \
-    vendor/meizu/m5c/proprietary/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
-    vendor/meizu/m5c/proprietary/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
-    vendor/meizu/m5c/proprietary/lib64/libMtkOmxCore.so:system/lib64/libMtkOmxCore.so \
+    vendor/meizu/m5c/proprietary/bin/MtkCodecService:system/bin/MtkCodecService \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxAdpcmDec.so:system/lib/libMtkOmxAdpcmDec.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxAdpcmEnc.so:system/lib/libMtkOmxAdpcmEnc.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxAlacDec.so:system/lib/libMtkOmxAlacDec.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxApeDec.so:system/lib/libMtkOmxApeDec.so \
+    vendor/meizu/m5c/proprietary/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
+    vendor/meizu/m5c/proprietary/lib64/libMtkOmxCore.so:system/lib64/libMtkOmxCore.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxFlacDec.so:system/lib/libMtkOmxFlacDec.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxG711Dec.so:system/lib/libMtkOmxG711Dec.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxGsmDec.so:system/lib/libMtkOmxGsmDec.so \
@@ -366,6 +366,8 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxVdecEx.so:system/lib/libMtkOmxVdecEx.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxVenc.so:system/lib/libMtkOmxVenc.so \
     vendor/meizu/m5c/proprietary/lib/libMtkOmxVorbisEnc.so:system/lib/libMtkOmxVorbisEnc.so \
+    vendor/meizu/m5c/proprietary/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
+    vendor/meizu/m5c/proprietary/lib64/libMtkOmxCore.so:system/lib64/libMtkOmxCore.so \
     vendor/meizu/m5c/proprietary/lib/libmhalImageCodec.so:system/lib/libmhalImageCodec.so \
     vendor/meizu/m5c/proprietary/lib64/libmhalImageCodec.so:system/lib64/libmhalImageCodec.so \
     vendor/meizu/m5c/proprietary/lib/libSwJpgCodec.so:system/lib/libSwJpgCodec.so \
@@ -375,7 +377,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m5c/proprietary/lib/libvcodec_cap.so:system/lib/libvcodec_cap.so \
     vendor/meizu/m5c/proprietary/lib64/libvcodec_cap.so:system/lib64/libvcodec_cap.so \
     vendor/meizu/m5c/proprietary/lib/libh264enc_sa.ca7.so:system/lib/libh264enc_sa.ca7.so \
-    vendor/meizu/m5c/proprietary/lib64/libh264enc_sa.ca7.so:system/lib64/libh264enc_sa.ca7.so \
     vendor/meizu/m5c/proprietary/lib/libh264enc_sb.ca7.so:system/lib/libh264enc_sb.ca7.so \
     vendor/meizu/m5c/proprietary/lib/libmp4enc_sa.ca7.so:system/lib/libmp4enc_sa.ca7.so \
     vendor/meizu/m5c/proprietary/lib/libmp4enc_xa.ca7.so:system/lib/libmp4enc_xa.ca7.so \
